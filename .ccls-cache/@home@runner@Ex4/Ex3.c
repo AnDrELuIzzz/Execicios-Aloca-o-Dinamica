@@ -38,10 +38,10 @@ int main()
 cadastro *F_CAD(int nr)
 {
     cadastro *vet_cad;
-    vet_cad = (cadastro *)malloc(nr * sizeof(cadastro)); // ALOCA O VETO DINAMICAMENTE
-
-    if (vet_cad == NULL)
-    { // VERIFICA O RETORNO DA FUNCAO MALLOC
+    vet_cad = (cadastro *)malloc(nr * sizeof(cadastro));        //ALOCA O VETO DINAMICAMENTE
+    
+    if (vet_cad == NULL)        // VERIFICA O RETORNO DA FUNCAO MALLOC
+    { 
         perror("Memória insuficiente!!");
         exit(1);
     }
